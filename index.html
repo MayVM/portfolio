@@ -1,47 +1,52 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./assets/bootstrap.min.css" rel="stylesheet">
-        <title>May's Portfolio</title>
-        <style>
-            .navbar-brand {
-                color: #f8f8f2;
-            }
-
-            .btn {
-                color: #f8f8f2;
-                border-color: #f8f8f2;
-                background-color: #bd93f9;
-            }
-
-            .image-container {
-              float:right;
-              shape-outside: circle();
-            }
-
-            li {
-                text-align: left;
-            }
-
-            body {
-                background: #282a36;
-                color: #f8f8f2;
-                
-            }
-            section {
-                overflow: auto;
-                background-color: #44475a;
-                text-align: left;
-                border: 2px solid #f8f8f2;
-            }
-
-
-        </style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <style>
+      .navbar-brand {
+        color: #f8f8f2;
+      }
+      .btn {
+        color: #f8f8f2;
+        border-color: #f8f8f2;
+        background-color: #bd93f9;
+      }
+      .btn-group:hover>.dropdown-menu  {
+        display:block;
+        float:inline-start;
+      }
+      .btn-group>.dropdown-toggle:active {
+      pointer-events: none;
+      }
+      .image-container {
+        float:right;
+        shape-outside: circle();
+      }
+      li {
+        text-align: left;
+      }
+      
+      body {
+        background: #282a36;
+        color: #f8f8f2;
+      }
+      section {
+        overflow: auto;
+        background-color: #44475a;
+        text-align: left;
+        border: 2px solid #f8f8f2;
+      }
+      
+      
+      </style>
     </head>
     <!-- Body -->
     <body class="font-monospace">
-      <!-- Narbar -->
+      <!-- Navbar -->
       <div class="fixed-top">
         <nav style="background-color: #44475a; " class="navbar navbar-expand-md navbar-dark shadow-lg">
           <div class="container-fluid">
@@ -52,7 +57,7 @@
             <div class="collapse navbar-collapse" id="navbarsExampleXxl">
               <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>home</a>
+                  <a class="nav-link active" aria-current="page" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>hello_world</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>hobbies</a>
@@ -71,11 +76,11 @@
           </div>
         </nav>
         <!-- Social button -->
-        <div id="nav-item" class="btn-group d-flex end-0 top-0 p-2 px-3 position-absolute">
-          <a style="background-color: #bd93f9; border: 3px solid #f8f8f2; " class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div id="nav-item" class="btn-group d-flex end-0 top-0 p-2 px-3 position-absolute justify-content-end bott">
+          <a style="background-color: #bd93f9; border: 2px solid #f8f8f2; " class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             My Socials
           </a>
-          <ul class="dropdown-menu" style="background-color: #f8f8f2; color: #282a36;">
+          <ul class="dropdown-menu" style="background-color: #f8f8f2; color: #282a36; top: 50px;">
             <li><a class="dropdown-item" href="https://github.com/MayVM">GitHub</a></li>
             <li><a class="dropdown-item" href="https://discordapp.com//users/917772856778178581">Discord</a></li>
             <li><a class="dropdown-item" href="https://www.linkedin.com/in/mayvm/">LinkedIn</a></li>
@@ -83,42 +88,52 @@
           </ul>
         </div>
       </div>
+      
       <!-- Gutter -->
       <div class="py-5"></div>
+
         <!-- Introduction -->
-        <section id="home" class="col-11 rounded-4 container-fluid p-5 shadow">
-          <!-- Portfolio header -->
-          <h1 style="text-align: center; color:#bd93f9;" class="display-2 ">Portfolio</h1>
-          <!-- Decorative bars -->
-          <div style="background: #f8f8f2;" class="col-12 py-1">
-            <div style="background: #44475a;" class="col-12 py-1"></div>
+        <section id="home" class="rounded-4 container-fluid p-5 shadow col-11">
+        <!-- Portfolio header -->
+        <h1 style="text-align: center; color:#f8f8f2;" class="display-2 ">Portfolio</h1>
+        <!-- Decorative bars -->
+        <div style="background: #bd93f9;" class="py-1">
+          <div style="background: #44475a;" class="col-12 py-1">
           </div>
-        <!-- Gutter -->
-        <div class="py-2"></div>
-          <!-- Image -->
-          <div class="image-container">
-            <img style="border: 5px solid #bd93f9;" class="rounded-circle m-2 img-fluid" src="assets/images/IMG1.png">
-          </div>
-          <!-- body -->
-          <p class="display-2 text-wrap">Hello <span class="fw-bold text-decoration-underline" style="color:#bd93f9">world</span>, I'm <span class="fw-bold text-under" style="color:#bd93f9">May</span>! </p>
-          <p>
-            I am currently a student at the Utrecht University of applied sciences.
-            <br><br>
-            One of my biggest passions is learning new things, I 
-            just absolutely love to do research, I can spend 
-            countless hours deep diving into “unknown seas 
-            of knowledge” and explore them to the depths. 
-            Often times I also love to share the knowledge I 
-            have attained with my peers, especially if I think it 
-            might benefit them as well.
-            <br><br>
-            Another thing I absolutely love is music, it is the one thing that never fails to enlighten my mood. Music in my eyes is just such a wonderful form of art, I love listening to it, I love playing music (which is why I play the bass and electric guitar), I love going to concerts, and I love talking about music!
-            <br><br>
-            Aside from those two things, I am obsessed with automating things, especially in the sense of using programming to simplify/ automate otherwise boring and tedious tasks.<br>
-        </p>
+        </div>
+        <!-- Image -->
+        <div class="image-container">
+          <img style="border: 5px solid #bd93f9;" class="rounded-circle m-2 img-fluid" src="assets/images/IMG1.png">
+        </div>
+        <!-- Text fields -->
+            <div class="py-2"></div>
+                  <!-- Gutter -->
+            <!-- <div class="py-5"></div> -->
+            <!-- body -->
+            <p style="text-align: center;" class="display-2 text-wrap">Hello <span class="fw-bold text-decoration-underline" style="color:#bd93f9">world</span>, I'm <span class="fw-bold text-under" style="color:#bd93f9">May</span>! </p>
+            <p style="text-align: center;">
+              I am a student at the HU University of Applied Sciences Utrecht. The course I'm following is called 'Open-ICT', and unlike the regular IT courses, you work on real world projects. The primary projects I worked on in the last year were (the predecessor of) this website, and a game called 'Spark', but I will explain more about that in the projects section.
+            </p>
         </section>
+        <!-- Gutter -->
+        <div class="py-3"></div>
+
+        <!-- Hobbies -->
+        <section id="home" class="rounded-4 container-fluid p-5 shadow col-11">
+          <!-- Portfolio header -->
+          <h1 style="text-align: center; color:#f8f8f2;" class="display-2 ">hobbies</h1>
+          <!-- Decorative bars -->
+          <div style="background: #bd93f9;" class="py-1">
+            <div style="background: #44475a;" class="col-12 py-1">
+            </div>
+          </div>
+              <!-- body -->
+              <p style="text-align: center;">
+              </p>
+          </section>
       <!-- Gutter -->
       <div class="py-3"></div>
-        <script src="./assets/bootstrap.bundle.min.js"></script>
+
+        
     </body>
 </html>
