@@ -15,6 +15,11 @@
                 background-color: #bd93f9;
             }
 
+            .image-container {
+              float:right;
+              shape-outside: circle();
+            }
+
             li {
                 text-align: left;
             }
@@ -24,89 +29,98 @@
                 color: #f8f8f2;
             }
             section {
-                padding: 10px;
-                padding-top: 70px;
+                overflow: auto;
+                background-color: #44475a;
+                text-align: left;
             }
+            purple {
+              border-color: #bd93f9;
+            }
+
+
         </style>
     </head>
-    <body>
+    <!-- Body -->
+    <body class="font-monospace">
+      <!-- Narbar -->
       <div class="fixed-top">
-        <nav style="background-color: #44475a; " class="navbar navbar-expand-md navbar-dark" aria-label="Seventh navbar example">
+        <nav style="background-color: #44475a; " class="navbar navbar-expand-md navbar-dark shadow-lg">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
       
             <div class="collapse navbar-collapse" id="navbarsExampleXxl">
               <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>hobbies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>interests</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownXxl" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                  <ul class="dropdown-menu " aria-labelledby="dropdownXxl">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>skills</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fw-bold" style="color:#bd93f9">#</span>projects</a>
+                </li>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+        <!-- Social button -->
         <div id="nav-item" class="btn-group d-flex end-0 top-0 p-2 px-3 position-absolute">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Socials
+            My Socials
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">GitHub</a></li>
-            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-            <li><a class="dropdown-item" href="#">Mastodon</a></li>
-            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+            <li><a class="dropdown-item" href="https://github.com/MayVM">GitHub</a></li>
+            <li><a class="dropdown-item" href="https://discordapp.com//users/917772856778178581">Discord</a></li>
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/mayvm/">LinkedIn</a></li>
+            <li><a class="dropdown-item" href="https://mstdn.social/@mayvm">Mastodon</a></li>
           </ul>
         </div>
       </div>
-        <!-- navigation -->
-
-
-        
-        
+      <!-- Gutter -->
+      <div class="py-5"></div>
 
         <!-- Introduction -->
-        <section id="intro">
-            <div class="container-fluid">
-                <div class="row col">
-                    <p class="display-2 shado">Hello world, I'm <span class="fw-bold" style="color:#bd93f9">May</span>! </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad, in expedita sint cumque voluptatem est aliquam alias obcaecati nesciunt minima ducimus nobis provident numquam voluptas cum qui sunt. Voluptatem.</p>
-                </div>
-            </div>
+        <section id="home" class="col-11 rounded-4 container-fluid p-5 border border-2">
+          <!-- Portfolio header -->
+          <h1 style="text-align: center; color:#bd93f9;" class="display-2 ">Portfolio</h1>
+          <!-- Decorative bars -->
+          <div style="background: #f8f8f2;" class="col-12 py-1">
+            <div style="background: #44475a;" class="col-12 py-1"></div>
+          </div>
+        <!-- Gutter -->
+        <div class="py-2"></div>
+          <!-- Image -->
+          <div class="image-container">
+            <img style="border: 5px solid #bd93f9;" class="rounded-circle m-2 img-fluid" src="assets/images/IMG1.png">
+          </div>
+          <!-- body -->
+          <p class="display-2 text-wrap">Hello <span class="fw-bold text-decoration-underline" style="color:#bd93f9">world</span>, I'm <span class="fw-bold text-under" style="color:#bd93f9">May</span>! </p>
+          <p>
+            I am currently a student at the Utrecht University of applied sciences.
+            <br><br>
+            One of my biggest passions is learning new things, I 
+            just absolutely love to do research, I can spend 
+            countless hours deep diving into “unknown seas 
+            of knowledge” and explore them to the depths. 
+            Often times I also love to share the knowledge I 
+            have attained with my peers, especially if I think it 
+            might benefit them as well.
+            <br><br>
+            Another thing I absolutely love is music, it is the one thing that never fails to enlighten my mood. Music in my eyes is just such a wonderful form of art, I love listening to it, I love playing music (which is why I play the bass and electric guitar), I love going to concerts, and I love talking about music!
+            <br><br>
+            Aside from those two things, I am obsessed with automating things, especially in the sense of using programming to simplify/ automate otherwise boring and tedious tasks.<br>
+        </p>
         </section>
-
+      <!-- Gutter -->
+      <div class="py-3"></div>
         <script src="./assets/bootstrap.bundle.min.js"></script>
     </body>
 </html>
