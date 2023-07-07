@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/highlight.js"></script>
 </head>
 
 <!-- Body -->
@@ -16,10 +17,11 @@
 <body class="font-monospace">
   <!-- Navbar -->
   <div class="fixed-top object-shadow" style="border-bottom: 2px solid #bd93f9;">
-    <nav style="background-color: #282a36; " class="navbar navbar-expand-md navbar-dark shadow-lg">
+    <nav style="background-color: #282a36; " class="navbar navbar-expand-md navbar-dark shadow-lg" data-bs-spy="scroll"
+      data-bs-target="#navbarsExampleXxl">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custog" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleXxl">
@@ -30,32 +32,31 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills"><span class="fw-bold" style="color:#bd93f9">#</span>skills</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects"><span class="fw-bold" style="color:#bd93f9">#</span>projects</a>
-            </li>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Social button -->
-    <div id="nav-item" class="btn-group objects end-0 top-0 p-2 px-3 position-absolute">
-      <a style="background-color: #282a36; border: 2px solid #bd93f9; " class="btn dropdown-toggle" href="#"
-        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="btn-group end-0 top-0 p-2 px-3 position-absolute">
+      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         My Socials
       </a>
       <ul class="dropdown-menu object-shadow" style="right: 16px; top: 50px; width: 175px;">
         <li><a class="dropdown-item" href="https://github.com/MayVM">GitHub <img class="dropdown-icon"
               src="assets/images/github.svg"></a></li>
-        <div class="spacer-px"></div>
+        <div class="spacer-gx"></div>
         <li><a class="dropdown-item" href="https://discordapp.com//users/917772856778178581">Discord <img
               class="dropdown-icon" src="assets/images/discord.svg"></a></li>
         </li>
-        <div class="spacer-px"></div>
+        <div class="spacer-gx"></div>
         <li><a class="dropdown-item" href="https://www.linkedin.com/in/mayvm/">LinkedIn <img class="dropdown-icon"
               src="assets/images/linkedin.svg"></a></li>
         </li>
-        <div class="spacer-px"></div>
+        <div class="spacer-gx"></div>
         <li><a class="dropdown-item" href="https://mstdn.social/@mayvm">Mastodon <img class="dropdown-icon"
               src="assets/images/mastodon.svg"></a></li>
       </ul>
@@ -64,19 +65,20 @@
   <!-- Gutter -->
   <div class="py-5"></div>
   <!-- Home -->
-  <section id="home" class="rounded-4 container-fluid p-3 col-11 px-5">
+  <section id="home" class="rounded-4 container-fluid p-3 col-11 px-5 object-shadow">
     <div>
       <!-- Header -->
       <h1 class="display-3">#<span style="color:#f8f8f2;">home</span></h1>
       <!-- Decorative bar -->
-      <div class="spacer-wx my-3"></div>
+      <div class="spacer-gx my-3"></div>
       <!-- Content -->
       <p style="text-align: left;" class="display-5 text-wrap">Hello <span class="fw-bold text-decoration-underline"
           style="color:#bd93f9">world</span>, I'm <span class="fw-bold text-under" style="color:#bd93f9">May</span>!
       </p>
       <!-- Image -->
-      <div class="image-container">
-        <img style="border: 3px solid #bd93f9;" class="rounded-circle m-2 img-fluid" src="assets/images/IMG1.png">
+      <div class="image-container ">
+        <img style="border: 3px solid #bd93f9;" class="rounded-circle m-2 img-fluid object-shadow"
+          src="assets/images/IMG1.png">
       </div>
       <p style="text-align:left;">
         I am a student at the HU University of Applied Sciences Utrecht. The course I'm following is called 'Open-ICT',
@@ -93,7 +95,8 @@
         Now after having shared my love and passion for music, you might be wondering, do you play any instruments or
         something? To that the answer is… Yes! The instruments I like to play are the electric guitar, and the bass.
         Aside from that I also enjoy playing around in Logic Pro. Although admittedly, I am far from proficient on any
-        of the instruments I play. But regardless, it’s a lot of fun, and I could recommend it to anyone who’s considering it, to
+        of the instruments I play. But regardless, it’s a lot of fun, and I could recommend it to anyone who’s
+        considering it, to
         up an instrument!
         <br><br>
         Another one of my passions is learning new things, I just absolutely love to do research, I can spend countless
@@ -109,12 +112,12 @@
   <!-- Gutter -->
   <div class="py-3"></div>
   <!-- Skills -->
-  <section id="skills" class="rounded-4 container-fluid p-3 col-11 px-5">
+  <section id="skills" class="rounded-4 container-fluid p-3 col-11 px-5 object-shadow">
     <div>
       <!-- Header -->
       <h1 class="display-3">#<span style="color:#f8f8f2;">skills</span></h1>
       <!-- Decorative bar -->
-      <div class="spacer-px my-3"></div>
+      <div class="spacer-gx my-3"></div>
       <p>
         As mentioned before, I love learning and doing research, so developing new skills is always something I strive
         to do.
@@ -251,18 +254,19 @@
   <!-- Gutter -->
   <div class="py-3"></div>
   <!-- Projects -->
-  <div id="projects">
-    <h1 class="display-3">#<span style="color:#f8f8f2;">projects</span></h1>
-    <!-- Decorative bar -->
-    <div class="spacer-wx my-3"></div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 px-4">
+  <section id="projects" style="background-color: transparent; border: 0px; ">
+    <div
+      style="background-color: #282a36; border-top: #bd93f9 solid 2px; border-bottom: #bd93f9 solid 2px; margin-top: 10px; margin: 2;">
+      <h1 class="display-3 py-2">#<span style="color:#f8f8f2;">projects</span></h1>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 px-4">
       <!-- Spark -->
       <div class="col-sm-6 py-3 mb-3 mb-sm-0">
-        <div class="card">
+        <div class="card rounded-4">
           <div class="card-body">
             <img src="assets/images/spark.png" class="card-img-top">
             <h5 class="card-title p-2"><a href="https://github.com/HU-EBP/game">SPARK</a></h5>
-            <div class="spacer-px my-3"></div>
+            <div class="spacer-gx my-3"></div>
             <p class="card-text">This is without a doubt the biggest project I worked on so far, and I definitely had a
               lot of fun contributing to it. The part I made is the hometown, which is shown in the screenshot above.
               <br><br>
@@ -275,13 +279,13 @@
       </div>
       <!-- Portfolio Website V2 -->
       <div class="col-sm-6 py-3 mb-3 mb-sm-0">
-        <div class="card">
+        <div class="card rounded-4">
           <div class="card-body">
             <img
               src="https://api.microlink.io/?url=https%3A%2F%2Fmayvm.github.io%2Fportfolio%2F&screenshot=true&embed=screenshot.url"
               class="card-img-top object-shadow rounded-4">
             <h5 class="card-title p-2"><a href="https://github.com/MayVM/portfolio">Portfolio Website V2</a></h5>
-            <div class="spacer-px my-3"></div>
+            <div class="spacer-gx my-3"></div>
             <p class="card-text">This is the site you're currently visiting. Initially my plan was to just update my old
               portfolio site for this school project. However, I figured I also wanted to take the chance to learn some
               new things. So I decided to learn bootstrap and try to make the website fully responsive.
@@ -291,13 +295,13 @@
       </div>
       <!-- Portfolio Website V1 -->
       <div class="col-sm-6 py-3 mb-3 mb-sm-0">
-        <div class="card">
+        <div class="card rounded-4">
           <div class="card-body">
             <img
               src="https://api.microlink.io/?url=https%3A%2F%2Fmayvm.github.io%2FPortolio-site%2Findex.html&screenshot=true&embed=screenshot.url"
               class="card-img-top object-shadow rounded-3">
             <h5 class="card-title p-2"><a href="https://github.com/MayVM/Portolio-site">Portfolio Website V1</a></h5>
-            <div class="spacer-px my-3"></div>
+            <div class="spacer-gx my-3"></div>
             <p class="card-text">
               This was the first website I actually built using code. Prior I did have some slight experience with web
               builders etc, but hadn't worked with HTML/CSS/JS prior.
@@ -307,11 +311,11 @@
       </div>
       <!-- Mac Keybinds for Windows -->
       <div class="col-sm-6 py-3 mb-3 mb-sm-0">
-        <div class="card">
+        <div class="card rounded-4">
           <div class="card-body">
             <h5 class="card-title p-2"><a href="https://github.com/MayVM/Mac-Keybinds-For-Windows">Mac Keybinds for
                 windows</a></h5>
-            <div class="spacer-px my-3"></div>
+            <div class="spacer-gx my-3"></div>
             <p class="card-text">
               This was my first programming project. I've long since abandoned it as I had no need for it anymore (plus
               there's way better solutions such as <a href="https://github.com/rbreaves/kinto">Kinto</a>).
@@ -326,7 +330,7 @@
     </div>
     <!-- Gutter -->
     <div class="py-5"></div>
-  </div>
+  </section>
 </body>
 
 </html>
