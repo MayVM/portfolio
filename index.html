@@ -5,15 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>May's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-  <link rel="stylesheet" href="./assets/bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/bootstrap.min.css" alt="">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">  
   <script src="./assets/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Navbar */
+.navbar-brand {
+  color: #f8f8f2;
+}
+.btn {
+  color: #f8f8f2;
+}
+.btn-group:hover > .dropdown-menu {
+  display: block;
+  float: inline-start;
+}
+.dropdown-menu {
+  background-color: #282a36;
+  border: #bd93f9 solid 2px;
+  padding: 0;
+}
+.dropdown-item {
+  color: #bd93f9;
+  text-align: right;
+  height: 50px;
+  justify-content: center;
+}
+.dropdown-item:hover {
+  background-color: #44475a;
+  color: #f8f8f2;
+  border-radius: 4px;
+}
+
+.dropdown-item:hover > .dropdown-icon {
+  filter: invert(81%) sepia(34%) saturate(6384%) hue-rotate(211deg)
+    brightness(100%) contrast(96%);
+}
+.dropdown-icon {
+  display: inline-block;
+
+  height: 90%;
+
+  padding: 2px;
+  filter: invert(93%) sepia(5%) saturate(521%) hue-rotate(339deg)
+    brightness(109%) contrast(94%);
+}
+
+.btn-group > .dropdown-toggle:active {
+  pointer-events: none;
+}
+/* About me */
+.image-container {
+  float: right;
+  shape-outside: circle();
+}
+
+/* Skills */
+.rating {
+  background-color: #282a36;
+  border: #bd93f9 solid 2px;
+  color: #f8f8f2;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+.hearts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bd93f9;
+}
+
+/* Portfolio */
+.card {
+  background-color: #44475a;
+  border: #bd93f9 solid 2px;
+  color: #f8f8f2;
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+.card-title {
+  color: #bd93f9;
+}
+
+/* spacers */
+.spacer-wx {
+  background-color: #f8f8f2;
+  height: 2px;
+}
+
+.spacer-px {
+  background-color: #bd93f9;
+  height: 2px;
+}
+
+.spacer-gx {
+  background-color: #44475a;
+  height: 2px;
+}
+
+.object-shadow {
+  -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+/* containers */
+li {
+  text-align: left;
+}
+body {
+  background: #282a36;
+  color: #f8f8f2;
+}
+section {
+  overflow: auto;
+  background-color: #44475a;
+  text-align: left;
+  border: 2px solid #bd93f9;
+  -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+h1 {
+  text-align: center;
+  color: #bd93f9;
+}
+a {
+  color: #f8f8f2;
+}
+
+  </style>
 </head>
 
 <!-- Body -->
 
-<body class="font-monospace">3
+<body class="font-monospace">
   <!-- Navbar -->
   <div class="fixed-top object-shadow" style="border-bottom: 2px solid #bd93f9;">
     <nav style="background-color: #44475a; " class="navbar navbar-expand-md navbar-dark shadow-lg">
